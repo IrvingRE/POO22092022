@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ico.fes;
 
-/**
- *
- * @author felipezarate
- */
+
 public class Aritmetica {
     private int a;
     private int b;
@@ -40,14 +34,10 @@ public class Aritmetica {
     public String toString() {
         return "Aritmetica{" + "a=" + a + ", b=" + b + '}';
     }
-    
-    public int sumar() {
+    public int sumar(){
         return this.a + this.b;
     }
-    
-    //throws << Para calificar excepcion numerica >>
     public int dividir() throws ArithmeticException{
-       return this.a/this.b;
+        return this.a / this.b;
     }
-    
 }

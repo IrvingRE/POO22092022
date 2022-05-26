@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ico.fes.herencia;
 
-/**
- *
- * @author felipezarate
- */
+
 public class Persona {
-        
-        protected String nombre;
-        protected int edad;
+    protected String nombre;
+    protected int edad;
 
     public Persona() {
     }
@@ -39,14 +31,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre =" + nombre + ", edad =" + edad + '}';
+        return  nombre + ", " + edad ;
     }
-        
-        public void comer(){
-            System.out.println(nombre +" esta comiendo...");
-        }
     
-        
-   
-                
+    public void comer(){
+        System.out.println(this.nombre + " esta comiendo...");
+    }
 }

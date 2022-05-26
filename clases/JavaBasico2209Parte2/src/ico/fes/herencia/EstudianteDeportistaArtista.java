@@ -1,26 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ico.fes.herencia;
 
-/**
- *
- * @author felipezarate
- */
-public class EstudianteDeportistaArtista extends Persona implements Deportista,Artista{
-    
+
+public class EstudianteDeportistaArtista extends Persona implements Deportista, Artista{
     private String carrera;
-    private String numeroCuenta;
+    private String numeroCuanta;
     private String disciplinaDeportiva;
     private String generoArtistico;
 
     public EstudianteDeportistaArtista() {
     }
 
-    public EstudianteDeportistaArtista(String carrera, String numeroCuenta, String disciplinaDeportiva, String generoArtistico) {
+    public EstudianteDeportistaArtista(String carrera, String numeroCuanta, String disciplinaDeportiva, String generoArtistico) {
         this.carrera = carrera;
-        this.numeroCuenta = numeroCuenta;
+        this.numeroCuanta = numeroCuanta;
         this.disciplinaDeportiva = disciplinaDeportiva;
         this.generoArtistico = generoArtistico;
     }
@@ -41,12 +34,12 @@ public class EstudianteDeportistaArtista extends Persona implements Deportista,A
         this.carrera = carrera;
     }
 
-    public String getNumeroCuenta() {
-        return numeroCuenta;
+    public String getNumeroCuanta() {
+        return numeroCuanta;
     }
 
-    public void setNumeroCuenta(String numeroCuenta) {
-        this.numeroCuenta = numeroCuenta;
+    public void setNumeroCuanta(String numeroCuanta) {
+        this.numeroCuanta = numeroCuanta;
     }
 
     public String getDisciplinaDeportiva() {
@@ -57,30 +50,25 @@ public class EstudianteDeportistaArtista extends Persona implements Deportista,A
         this.disciplinaDeportiva = disciplinaDeportiva;
     }
 
-
     @Override
     public void entrenar() {
-        System.out.println(this.nombre+"esta entrenando"+this.disciplinaDeportiva);
+        System.out.println(this.nombre + "Esta entrenando " + this.disciplinaDeportiva);
     }
 
     @Override
     public void jugar() {
-        System.out.println(this.nombre + "esta jugando" + this.disciplinaDeportiva);
-
+        System.out.println(this.nombre + "esta jugando " + this.disciplinaDeportiva);
     }
 
     @Override
     public void ensayar() {
-        System.out.println(this.nombre + " esta ensayando/practicando" + this.generoArtistico);
-
+        System.out.println(this.nombre + " esta ensayando/practicando " + this.generoArtistico);
     }
 
     @Override
     public void presentar() {
-        System.out.println(this.nombre + "esta presentando su obra de " + this.generoArtistico);
-
+        System.out.println(this.nombre + " esta presentando su obra de " + this.generoArtistico);
     }
-
     
     
 }

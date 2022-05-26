@@ -1,14 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ico.fes;
 
-/**
- *
- * @author felipezarate
- */
-public class Cuadrado implements Figura {
+
+public class Cuadrado implements Figura{
     
     private float lado;
 
@@ -18,11 +12,11 @@ public class Cuadrado implements Figura {
     public Cuadrado(float lado) {
         this.lado = lado;
     }
-
+    
     @Override
     public float calcularArea() {
         System.out.println("Multiplicando lado por lado");
-        return this.lado*this.lado;
+        return this.lado * this.lado;
     }
 
     public float getLado() {
@@ -37,7 +31,5 @@ public class Cuadrado implements Figura {
     public String toString() {
         return "Cuadrado{" + "lado=" + lado + '}';
     }
-    
-    
     
 }
